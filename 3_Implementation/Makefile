@@ -1,5 +1,5 @@
 # Name of the project
-PROJECT_NAME = Employee management system
+PROJECT_NAME = Employee_recoed_system
 
 # Output directory
 BUILD = build
