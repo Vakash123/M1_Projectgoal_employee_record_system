@@ -1,8 +1,12 @@
 #include <stdio.h> 
 #include <stdlib.h>
+<<<<<<< HEAD
 //#include <conio.h>
 #include <windows.h> 
 #include <string.h>  
+=======
+#include <string.h>  ///string operations
+>>>>>>> 41f3857042ece62da7b7ad59a224ac2412919123
 #include "position.h"
 
 COORD coordinates = {0,0}; 
@@ -53,9 +57,15 @@ int main()
         position(40,20);
         printf("6. Exit"); 
         position(40,22);
+<<<<<<< HEAD
         printf("Your Choice: "); 
         fflush(stdin); 
         c  = getche(); 
+=======
+        printf("Your Choice: "); /// enter the choice 1, 2, 3, 4, 5
+        fflush(stdin); /// flush the input buffer
+        c  = getchar(); /// get the input from keyboard
+>>>>>>> 41f3857042ece62da7b7ad59a224ac2412919123
         switch(c)
         {
         case '1':  
@@ -89,7 +99,7 @@ int main()
             	printf("\nEnter the employee age: %d",e.eage);
             	printf("\nEnter the emplyee basic salary: %.2f",e.salary);
             }
-            getch();
+            getc();
             break;
         case '3':  
             system("cls");
