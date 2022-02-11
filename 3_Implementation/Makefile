@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Name of the project
 PROJECT_NAME = Employee_recoed_system
 
@@ -63,3 +64,5 @@ clean:
 # Create new build folder if not present
 $(BUILD):
 	mkdir build
+=======
+
