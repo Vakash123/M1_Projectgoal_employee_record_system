@@ -48,20 +48,20 @@ int main()
         position(40,8);
         printf("----------------------------------");
         position(40,10); 
-        printf("1. Add Record"); 
+        printf("1. Add New employee Record"); 
         position(40,12);
-        printf("2. List Records"); 
+        printf("2. List of all employee Records"); 
         position(40,14);
-        printf("3. Modify Records"); 
+        printf("3. Modify employee Records"); 
         position(40,16);
-        printf("4. Delete Records"); 
+        printf("4. Delete employee Records"); 
         position(40,18);
-        printf("5. search Records"); 
+        printf("5. search employee Records"); 
         position(40,20);
         printf("6. Exit"); 
         position(40,22);
         printf("Your Choice: "); 
-        fflush(stdin); 
+        fgetc(stdin); 
         c  = getche(); 
         switch(c)
         {
@@ -83,7 +83,7 @@ int main()
                 printf(" New Record had been added in your softare!\n");
 
                 printf("\n want to add another record(y/n) ");
-                fflush(stdin); 
+                fgetc(stdin); 
                 option = getche(); 
             }
             break;
@@ -120,7 +120,7 @@ int main()
                     }
                 }
                 printf("\nDo you want to Modify another record(y/n)");
-                fflush(stdin);
+                fgetc(stdin);
                 option = getche();
             }
             break;
@@ -149,7 +149,7 @@ int main()
                 permf = fopen("EMPLOYEE.DAT", "rb+");
               
                 printf("Do you want to Delete another record(y/n)");
-                fflush(stdin);
+                fgetc(stdin);
                 option = getche();
             }
             break;
@@ -196,7 +196,7 @@ int main()
 				}
                 countsearch=0;
                 printf("\nDo you want to Search another record?(y/n)");
-                fflush(stdin);
+                fgetc(stdin);
                 option = getche();
             }
             break;
