@@ -7,6 +7,7 @@ Test Plan | Description | Expected I/P | Expected O/P | Actual O/P | Type of Tes
 | HighLevel_03| User Input | 3 | Modify employee record | Will enter to modify page |will save in File|
 | HighLevel_03| User Input | 4 | Delete employee record | Will enter to Delete page |will save in File|
 | HighLevel_04| Save file | 5 | Search employee record | Will display the search name  | search the record |
+| HighLevel_05| User Input | 7 | Invalid option| Enter correct option |Invalid test|
 
 # Low_Level
 Test Plan | Description | Expected I/P | Expected O/P | Actual O/P | Type of Test 
@@ -19,7 +20,13 @@ Test Plan | Description | Expected I/P | Expected O/P | Actual O/P | Type of Tes
 | LowLevel_06| User Input | Y | enter the name of employee | Record had been modified |Modify test|
 | LowLevel_07| User Input | N | Click enter to main tab | Will return to main page |Modify test|
 | LowLevel_08| User Input | 4 | Delte employee name | Will delete the name of employee |Delete test|
-| LowLevel_09| User Input | Y | Modify employee name | Will modify the name of employee |Modify test|
+| LowLevel_09| User Input | Y | Modify employee name | Will modify the name of employee |Delete test|
+| LowLevel_10| User Input | N | Click enter to main tab| Will return to main tab |Delete test|
+| LowLevel_11| User Input | 5 | Enter name of employee to search| Will show the employee details |search test|
+| LowLevel_10| User Input | Y | Enter another employee name| Will search the employee details |search test|
+| LowLevel_10| User Input | N | Click enter to main tab| Will return to main tab |Search test|
+| LowLevel_10| User Input | 6 | Click enter to main tab| The program will close |Exit test|
+
 
 
 
