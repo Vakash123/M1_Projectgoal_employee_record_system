@@ -1,29 +1,36 @@
 #include <stdio.h> 
 #include <stdlib.h>
-<<<<<<< HEAD
-//#include <conio.h>
+#include <conio.h>
 #include <windows.h> 
 #include <string.h>  
-=======
-#include <string.h>  ///string operations
->>>>>>> 41f3857042ece62da7b7ad59a224ac2412919123
 #include "position.h"
 
 COORD coordinates = {0,0}; 
+
+
+
 int main()
 {
     FILE *permf, *tempf; 
-    char option, c;    
+    char option, c;
+
+    
     struct emp
     {
         char ename[40]; 
         int eage; 
         float salary; 
     };
+
     struct emp e; 
+
     char empname[40]; 
+
     long int recsize; 
-    int countsearch=0;   
+   
+    int countsearch=0;
+
+  
     system("Color E4"); 
     permf = fopen("EMPLOYEE.DAT","rb+");
     if(permf == NULL)
@@ -35,8 +42,12 @@ int main()
             exit(1);
         }
     }
-       
+    
+
+   
     recsize = sizeof(e);
+
+   
     while(1)
     {
         system("cls"); 
@@ -45,27 +56,21 @@ int main()
         position(40,8);
         printf("----------------------------------");
         position(40,10); 
-        printf("1. Add new employee Record"); 
+        printf("1. Add Record"); 
         position(40,12);
-        printf("2. List of all employees Records"); 
+        printf("2. List Records"); 
         position(40,14);
-        printf("3. Modify the employee Records"); 
+        printf("3. Modify Records"); 
         position(40,16);
-        printf("4. Delete employee Records"); 
+        printf("4. Delete Records"); 
         position(40,18);
-        printf("5. search an employee Records"); 
+        printf("5. search Records"); 
         position(40,20);
         printf("6. Exit"); 
         position(40,22);
-<<<<<<< HEAD
         printf("Your Choice: "); 
         fflush(stdin); 
         c  = getche(); 
-=======
-        printf("Your Choice: "); /// enter the choice 1, 2, 3, 4, 5
-        fflush(stdin); /// flush the input buffer
-        c  = getchar(); /// get the input from keyboard
->>>>>>> 41f3857042ece62da7b7ad59a224ac2412919123
         switch(c)
         {
         case '1':  
@@ -75,15 +80,15 @@ int main()
             option = 'y';
             while(option == 'y')  
             {
-                printf("\n Enter new Employee name: ");
+                printf("\n Enter the Employee name: ");
                 scanf("%s",e.ename);
-                printf("\n Enter employee age: ");
+                printf("\n Enter his/her age: ");
                 scanf("%d", &e.eage);
-                printf("\n Enter salary: ");
+                printf("\n Enter basic salary: ");
                 scanf("%f", &e.salary);
 
                 fwrite(&e,recsize,1,permf); 
-                printf(" New employee Record added!\n");
+                printf(" New Record added!\n");
 
                 printf("\n Do you want to add another record(y/n) ");
                 fflush(stdin); 
@@ -98,9 +103,11 @@ int main()
             	printf("\nEnter the employee name: %s",e.ename);
             	printf("\nEnter the employee age: %d",e.eage);
             	printf("\nEnter the emplyee basic salary: %.2f",e.salary);
+                
             }
-            getc();
+            getch();
             break;
+
         case '3':  
             system("cls");
             option = 'y';
@@ -141,13 +148,15 @@ int main()
                     {
                         fwrite(&e,recsize,1,tempf); 
                         
-					}                   
+                    }
+                   
                 }
                 fclose(permf);
                 fclose(tempf);
                 remove("EMPLOYEE.DAT"); 
-                rename("Temp.dat","EMPLOYEE.DAT"); 
-                permf = fopen("EMPLOYEE.DAT", "rb+");              
+                rename("Temp.dat","EMP.DAT"); 
+                permf = fopen("EMPLOYEE.DAT", "rb+");
+              
                 printf("Do you want to Delete another record(y/n)");
                 fflush(stdin);
                 option = getche();
@@ -166,23 +175,30 @@ int main()
                 {
                     if(strcmp(e.ename,empname) != 0)  
                     {
-                        fwrite(&e,recsize,1,tempf);                         
-                    }                    
+                        fwrite(&e,recsize,1,tempf); 
+                        
+                    }
+                    
                 }
                 fclose(permf);
                 fclose(tempf);
-                remove("Temporary.dat"); 
-                //rename("EMP.DAT","Temporary.dat"); 
-                permf = fopen("EMPLOYEE.DAT", "rb+");                                 
+                remove("Temp.dat"); 
+                //rename("EMPLOYEE.DAT","Temp.dat"); 
+                permf = fopen("EMPLOYEE.DAT", "rb+");
+                 //rewind(permf); 
+                 
                   while(fread(&e,recsize,1,permf) == 1)  
-                {                	
+                {
+                	
                     if(strcmp(e.ename,empname) == 0)  
                     {
                         printf("Enter the employee name: %s",e.ename);
             	        printf("\nEnter the employee age: %d",e.eage);
             	        printf("\nEnter the emplyee basic salary: %.2f\n",e.salary);
             	        countsearch++;
-                    }                                      
+                    }
+                   
+                   
                 }
                 if(countsearch==0)
 				{
@@ -196,7 +212,7 @@ int main()
             break;
 		case '6':
             fclose(permf);  
-            exit(0); 
+            exit(0); /// 
         }
     }
     return 0;
