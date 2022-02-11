@@ -1,10 +1,10 @@
-name: Linux C/C++ CI
+name: C/C++ CI
 
 on:
   push:
-    branches: [ master ]
+    branches: [ main ]
   pull_request:
-    branches: [ master ]
+    branches: [ main ]
 
 jobs:
   build:
@@ -13,7 +13,5 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: build
-      run: employee_record_system -o employee_record_system.exe
-    - name: Run
-      run: ./employee_record_system.exe
+    - name: make run
+      run : make -C 3_Implementation/
