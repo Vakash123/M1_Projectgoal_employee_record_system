@@ -1,3 +1,35 @@
+# Test plan
+# High_Level
+Test Plan | Description | Expected I/P | Expected O/P | Actual O/P | Type of Test 
+|:--:|:--:|:--:|:--:|:--:|:--:|
+| HighLevel_01| User Input | 1 | Add a new employee record | Enter the details of employee | Main dashboard test |
+| HighLevel_02| User Input | 2 | List of employees | Will display the employee list |saving the file|
+| HighLevel_03| User Input | 3 | Modify employee record | Will enter to modify page |will save in File|
+| HighLevel_03| User Input | 4 | Delete employee record | Will enter to Delete page |will save in File|
+| HighLevel_04| Save file | 5 | Search employee record | Will display the search name  | search the record |
+| HighLevel_05| User Input | 7 | Invalid option| Enter correct option |Invalid test|
+
+# Low_Level
+Test Plan | Description | Expected I/P | Expected O/P | Actual O/P | Type of Test 
+|:--:|:--:|:--:|:--:|:--:|:--:|
+| LowLevel_01| User Input | 1 | Add employee details | Will ask to create another employee detail (if Yes) |Save the details in list|
+| LowLevel_02| User Input | Y |Add another employee details| another employee details stored |Save the details in list|
+| LowLevel_03| User Input | N | click enter | Will enter to main dashboard page |Will comeback to dashboard page|
+| LowLevel_04| User Input | 2 | display the list of employess | Display all employee details|Display test|
+| LowLevel_05| User Input | 3 | Modify employee name | Will modify the name of employee |Modify test|
+| LowLevel_06| User Input | Y | enter the name of employee | Record had been modified |Modify test|
+| LowLevel_07| User Input | N | Click enter to main tab | Will return to main page |Modify test|
+| LowLevel_08| User Input | 4 | Delte employee name | Will delete the name of employee |Delete test|
+| LowLevel_09| User Input | Y | Modify employee name | Will modify the name of employee |Delete test|
+| LowLevel_10| User Input | N | Click enter to main tab| Will return to main tab |Delete test|
+| LowLevel_11| User Input | 5 | Enter name of employee to search| Will show the employee details |search test|
+| LowLevel_10| User Input | Y | Enter another employee name| Will search the employee details |search test|
+| LowLevel_10| User Input | N | Click enter to main tab| Will return to main tab |Search test|
+| LowLevel_10| User Input | 6 | Click enter to main tab| The program will close |Exit test|
+
+
+
+
 # Main Index of the software 
 
 ![Main page](https://user-images.githubusercontent.com/82767035/153038074-85930787-15ba-4b68-8646-398fb6c301a1.PNG)
@@ -29,6 +61,7 @@
 # output of list of records after deletion 
 
 ![list after delete a record](https://user-images.githubusercontent.com/82767035/153038030-aa86c735-76dc-47d1-b197-d5ae647b5b77.PNG)
+
 
 
 
