@@ -82,7 +82,7 @@ int main()
         position(40,22);
         printf("Your Choice: "); /// enter the choice 1, 2, 3, 4, 5
         fflush(stdin); /// flush the input buffer
-        c  = getche(); /// get the input from keyboard
+        c  = getchar(); /// get the input from keyboard
         switch(c)
         {
         case '1':  /// if user press 1
@@ -118,7 +118,7 @@ int main()
             	printf("\nEnter the emplyee basic salary: %.2f",e.salary);
                 
             }
-            getch();
+            getc();
             break;
 
         case '3':  /// if user press 3 then do modify record
