@@ -6,7 +6,7 @@ Build : employee_record_system.c
 
 Run : Build
 	./employee.out	
-	
+test : Run
 
 Clean :
 	rm -rf *.o *.out *.i *.s
