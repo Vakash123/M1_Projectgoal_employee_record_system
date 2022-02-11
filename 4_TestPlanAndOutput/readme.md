@@ -15,7 +15,13 @@ Test Plan | Description | Expected I/P | Expected O/P | Actual O/P | Type of Tes
 | LowLevel_02| User Input | Y |Add another employee details| another employee details stored |Save the details in list|
 | LowLevel_03| User Input | N | click enter | Will enter to main dashboard page |Will comeback to dashboard page|
 | LowLevel_04| User Input | 2 | display the list of employess | Display all employee details|Display test|
-| LowLevel_03| User Input | 3 | Modify employee name | Will modify the name of employee |Modify test|
+| LowLevel_05| User Input | 3 | Modify employee name | Will modify the name of employee |Modify test|
+| LowLevel_06| User Input | Y | enter the name of employee | Record had been modified |Modify test|
+| LowLevel_07| User Input | N | Click enter to main tab | Will return to main page |Modify test|
+| LowLevel_08| User Input | 4 | Delte employee name | Will delete the name of employee |Delete test|
+| LowLevel_09| User Input | Y | Modify employee name | Will modify the name of employee |Modify test|
+
+
 
 # Main Index of the software 
 
