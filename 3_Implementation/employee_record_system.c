@@ -6,30 +6,25 @@
 #include "position.h"
 
 COORD coordinates = {0,0}; 
-
-
-
 int main()
 {
     FILE *permf, *tempf; 
     char option, c;
-
     
     struct emp
     {
-        char ename[40]; 
+        char ename[50]; 
         int eage; 
         float salary; 
     };
 
     struct emp e; 
 
-    char empname[40]; 
+    char empname[50]; 
 
     long int recsize; 
    
     int countsearch=0;
-
   
     system("Color E4"); 
     permf = fopen("EMPLOYEE.DAT","rb+");
@@ -42,11 +37,8 @@ int main()
             exit(1);
         }
     }
-    
-
-   
+       
     recsize = sizeof(e);
-
    
     while(1)
     {
@@ -88,9 +80,9 @@ int main()
                 scanf("%f", &e.salary);
 
                 fwrite(&e,recsize,1,permf); 
-                printf(" New Record added!\n");
+                printf(" New Record had been added in your softare!\n");
 
-                printf("\n Do you want to add another record(y/n) ");
+                printf("\n want to add another record(y/n) ");
                 fflush(stdin); 
                 option = getche(); 
             }
@@ -102,8 +94,7 @@ int main()
             {
             	printf("\nEnter the employee name: %s",e.ename);
             	printf("\nEnter the employee age: %d",e.eage);
-            	printf("\nEnter the emplyee basic salary: %.2f",e.salary);
-                
+            	printf("\nEnter the emplyee basic salary: %.2f",e.salary);                
             }
             getch();
             break;
@@ -140,7 +131,7 @@ int main()
             {
                 printf("\nEnter name of employee to delete: ");
                 scanf("%s",empname);
-                tempf = fopen("Temp.dat","wb");  
+                tempf = fopen("Temporary.dat","wb");  
                 rewind(permf); 
                 while(fread(&e,recsize,1,permf) == 1)  
                 {
@@ -154,7 +145,7 @@ int main()
                 fclose(permf);
                 fclose(tempf);
                 remove("EMPLOYEE.DAT"); 
-                rename("Temp.dat","EMP.DAT"); 
+                rename("Temporary.dat","EMPLOYEE.DAT"); 
                 permf = fopen("EMPLOYEE.DAT", "rb+");
               
                 printf("Do you want to Delete another record(y/n)");
@@ -169,7 +160,7 @@ int main()
 			{
                 printf("\nEnter name of employee to Search: ");
                 scanf("%s",empname);
-                tempf = fopen("Temp.dat","wb");  
+                tempf = fopen("Temporary.dat","wb");  
                 rewind(permf); 
                 while(fread(&e,recsize,1,permf) == 1)  
                 {
@@ -182,8 +173,8 @@ int main()
                 }
                 fclose(permf);
                 fclose(tempf);
-                remove("Temp.dat"); 
-                //rename("EMPLOYEE.DAT","Temp.dat"); 
+                remove("Temporary.dat"); 
+                //rename("EMPLOYEE.DAT","Temporary.dat"); 
                 permf = fopen("EMPLOYEE.DAT", "rb+");
                  //rewind(permf); 
                  
@@ -197,8 +188,7 @@ int main()
             	        printf("\nEnter the emplyee basic salary: %.2f\n",e.salary);
             	        countsearch++;
                     }
-                   
-                   
+                                      
                 }
                 if(countsearch==0)
 				{
