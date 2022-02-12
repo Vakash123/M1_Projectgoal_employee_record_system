@@ -60,7 +60,7 @@ int main()
         position(40,20);
         printf("6. Exit"); 
         position(40,22);
-        printf("Your Choice: "); 
+        printf("Enter Your Choice: "); 
         fgetc(stdin); 
         c  = getche(); 
         switch(c)
@@ -72,17 +72,17 @@ int main()
             option = 'y';
             while(option == 'y')  
             {
-                printf("\n Enter the Employee name: ");
+                printf("\n Enter the name of Employee : ");
                 scanf("%s",e.ename);
-                printf("\n Enter his/her age: ");
+                printf("\n Enter age of employee: ");
                 scanf("%d", &e.eage);
-                printf("\n Enter basic salary: ");
+                printf("\n Enter the basic salary of employee: ");
                 scanf("%f", &e.salary);
 
                 fwrite(&e,recsize,1,permf); 
                 printf(" New Record had been added in your softare!\n");
 
-                printf("\n want to add another record(y/n) ");
+                printf("\n Do you want to add another record (y/n) ");
                 fgetc(stdin); 
                 option = getche(); 
             }
@@ -92,9 +92,9 @@ int main()
             rewind(permf); 
             while(fread(&e,recsize,1,permf)==1)  
             {
-            	printf("\nEnter the employee name: %s",e.ename);
-            	printf("\nEnter the employee age: %d",e.eage);
-            	printf("\nEnter the emplyee basic salary: %.2f",e.salary);                
+            	printf("\nEnter the name of the employee : %s",e.ename);
+            	printf("\nEnter the age of employee: %d",e.eage);
+            	printf("\nEnter the basic salary of employee: %.2f",e.salary);                
             }
             getch();
             break;
@@ -104,7 +104,7 @@ int main()
             option = 'y';
             while(option == 'y')
             {
-                printf("Enter the employee name to modify: ");
+                printf("Enter the name of employee to modify: ");
                 scanf("%s", empname);
                 rewind(permf);
                 while(fread(&e,recsize,1,permf)==1)  
@@ -183,7 +183,7 @@ int main()
                 	
                     if(strcmp(e.ename,empname) == 0)  
                     {
-                        printf("Enter the employee name: %s",e.ename);
+                        printf("Enter the name of employee : %s",e.ename);
             	        printf("\nEnter the employee age: %d",e.eage);
             	        printf("\nEnter the emplyee basic salary: %.2f\n",e.salary);
             	        countsearch++;
