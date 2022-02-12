@@ -3,10 +3,10 @@
 Test Plan | Description | Expected I/P | Expected O/P | Actual O/P | Type of Test 
 |:--:|:--:|:--:|:--:|:--:|:--:|
 | HighLevel_01| User Input | 1 | Add a new employee record | Enter the details of employee | Main dashboard test |
-| HighLevel_02| User Input | 2 | List of employees | Will display the employee list |saving the file|
-| HighLevel_03| User Input | 3 | Modify employee record | Will enter to modify page |will save in File|
-| HighLevel_03| User Input | 4 | Delete employee record | Will enter to Delete page |will save in File|
-| HighLevel_04| Save file | 5 | Search employee record | Will display the search name  | search the record |
+| HighLevel_02| User Input | 2 | List of employees | Will display the employee list |Valid test|
+| HighLevel_03| User Input | 3 | Modify employee record | Will enter to modify page |Valid test|
+| HighLevel_03| User Input | 4 | Delete employee record | Will enter to Delete page |Valid test|
+| HighLevel_04| Save file | 5 | Search employee record | Will display the search name  | valid test |
 | HighLevel_05| User Input | 7 | Invalid option| Enter correct option |Invalid test|
 
 # Low_Level
