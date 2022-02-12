@@ -21,3 +21,9 @@ need to mention UML diagrams, Usecase diagrams
 
   ![lowerleveldiagrmas](https://user-images.githubusercontent.com/82767035/152867935-7ed111d4-cff7-4f4a-86c3-60b72db12633.PNG)
 
+# Best methods follow 
+  * If user type any one of the input records then this application goes to that particular record 
+  * Had mentioned the colour coding which displays yellow at background and red in letters 
+  * This software had designed using coordinate axis of providing particular inputs by users
+  * the user had an option to exit the application by clicking the particular option 
+  * It can store n number of employee details in this software 

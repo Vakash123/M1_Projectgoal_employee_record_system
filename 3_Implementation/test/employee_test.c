@@ -1,7 +1,7 @@
 /**
- * @file tset_employee.c
- * @author raaga.vardhini@ltts.com
- * @brief 
+ * @file employee_test.c
+ * @author vankadari akash
+ * @brief : Running the test cases
  * @version 0.1
  * @date 2021-09-08
  * 
@@ -15,7 +15,7 @@
 #define PROJECT_NAME    "Employee_Record_System"
 
 /* Prototypes for all the test functions */
-void test_Add_Record(void);
+void position(void);
 
 
 /* Required by the unity test framework */
@@ -30,25 +30,17 @@ int main()
   UNITY_BEGIN();
 
 /* Run Test functions */
-  RUN_TEST(test_Add_Record);
-  RUN_TEST(test_Modify_Record);
-  RUN_TEST(test_Exit);
+  RUN_TEST(position);
+  
 
   /* Close the Unity Test Framework */
   return UNITY_END();
 }
 
 /* Write all the test functions */ 
-void test_ADD_Record(void) {
-  TEST_ASSERT_EQUAL(raaga 22 35000, Add_Record(raaga, 22, 35000));
+void position(void) {
+  TEST_ASSERT_EQUAL(20 40, position(20,40));
   
   /* Dummy fail*/
-  TEST_ASSERT_EQUAL(12 raaga 35000, Add_Record(raaga, 12, 7500));
-}
-
-void test_Modify_Record(void) {
-  TEST_ASSERT_EQUAL(raaga, Modify_Record( raaga));
-  
-  /* Dummy fail*/
-  TEST_ASSERT_EQUAL(raaga, Modify_Record(abc));
+  TEST_ASSERT_EQUAL(20 42, position(20,40));
 }
