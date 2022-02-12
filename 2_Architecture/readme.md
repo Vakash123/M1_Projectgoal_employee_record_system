@@ -26,4 +26,4 @@ need to mention UML diagrams, Usecase diagrams
   * Had mentioned the colour coding which displays yellow at background and red in letters 
   * This software had designed using coordinate axis of providing particular inputs by users
   * the user had an option to exit the application by clicking the particular option 
-  * It can store n number of employee details in this software 
+  * It can store n number of employee details in this software.
