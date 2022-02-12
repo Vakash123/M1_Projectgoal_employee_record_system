@@ -1,2 +1,2 @@
-Had menioned the code of Employee record system in C language
+I Had menioned the source code of Employee record system in C language
 
