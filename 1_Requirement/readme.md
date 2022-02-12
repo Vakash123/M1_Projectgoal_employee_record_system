@@ -55,6 +55,9 @@ To store employees data in an application
 * Where: 
 In an application software
 
+* When:
+This project had started designed from 2nd of febrauary 2022
+
 * How:
 By selecting the neccesary option we can enter the input of an employee and store the information in an application
 
