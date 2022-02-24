@@ -27,6 +27,6 @@ jobs:
         run: Sudo apt-get install cppcheck
 
       
-      - name: Static Analysis
+      - name: employee_record_system
         run: cppcheck --enable-all 3_Implementation
 
