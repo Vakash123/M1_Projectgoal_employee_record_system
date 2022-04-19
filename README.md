@@ -11,6 +11,8 @@ I had designed this project to store the data of employees working in an organiz
 
 [![CI](https://github.com/Vakash123/M1_Projectgoal_employee_record_system_software/actions/workflows/CI.yml/badge.svg)](https://github.com/Vakash123/M1_Projectgoal_employee_record_system_software/actions/workflows/CI.yml)
 
+[![Valgrind1](https://github.com/Vakash123/M1_Projectgoal_employee_record_system_software/actions/workflows/Valgrind1.yml/badge.svg)](https://github.com/Vakash123/M1_Projectgoal_employee_record_system_software/actions/workflows/Valgrind1.yml)
+
 |Folder|Description|
 |:--:|:--:|
 |0_Certificates| Done courses in different platform and attached the certificates|
