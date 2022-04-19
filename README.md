@@ -7,7 +7,7 @@ I had designed this project to store the data of employees working in an organiz
 
 ![](https://api.codiga.io/project/30948/score/svg)
 
-[![CI](https://github.com/Vakash123/M1_Projectgoal_employee_record_system_software/actions/workflows/CI.yml/badge.svg)](https://github.com/Vakash123/M1_Projectgoal_employee_record_system_software/actions/workflows/CI.yml) [![Valgrind1](https://github.com/Vakash123/M1_Projectgoal_employee_record_system_software/actions/workflows/Valgrind1.yml/badge.svg)](https://github.com/Vakash123/M1_Projectgoal_employee_record_system_software/actions/workflows/Valgrind1.yml)
+[![CI](https://github.com/Vakash123/M1_Projectgoal_employee_record_system_software/actions/workflows/CI.yml/badge.svg)](https://github.com/Vakash123/M1_Projectgoal_employee_record_system_software/actions/workflows/CI.yml) [![Valgrind1](https://github.com/Vakash123/M1_Projectgoal_employee_record_system_software/actions/workflows/Valgrind1.yml/badge.svg)](https://github.com/Vakash123/M1_Projectgoal_employee_record_system_software/actions/workflows/Valgrind1.yml) [![Unit-Testing](https://github.com/Vakash123/M1_Projectgoal_employee_record_system_software/actions/workflows/Unit_Testing.yml/badge.svg)](https://github.com/Vakash123/M1_Projectgoal_employee_record_system_software/actions/workflows/Unit_Testing.yml)
 
 |Folder|Description|
 |:--:|:--:|
