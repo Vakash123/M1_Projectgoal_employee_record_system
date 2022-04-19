@@ -7,9 +7,9 @@ I had designed this project to store the data of employees working in an organiz
 
 ![](https://api.codiga.io/project/30948/score/svg)
 
-![][![V](https://github.com/Vakash123/M1_Projectgoal_employee_record_system_software/actions/workflows/V.yml/badge.svg)](https://github.com/Vakash123/M1_Projectgoal_employee_record_system_software/actions/workflows/V.yml)
+[![V](https://github.com/Vakash123/M1_Projectgoal_employee_record_system_software/actions/workflows/V.yml/badge.svg)](https://github.com/Vakash123/M1_Projectgoal_employee_record_system_software/actions/workflows/V.yml)
 
-
+[![CI](https://github.com/Vakash123/M1_Projectgoal_employee_record_system_software/actions/workflows/CI.yml/badge.svg)](https://github.com/Vakash123/M1_Projectgoal_employee_record_system_software/actions/workflows/CI.yml)
 
 |Folder|Description|
 |:--:|:--:|
