@@ -1,4 +1,4 @@
-# Test plan
+ # Test plan
 # High_Level
 Test Plan | Description | Expected I/P | Expected O/P | Actual O/P | Type of Test 
 |:--:|:--:|:--:|:--:|:--:|:--:|
